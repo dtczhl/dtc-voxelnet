@@ -83,7 +83,7 @@ IMG_ROOT = '/media/hdc/KITTI/image/training/image_2/'
 PC_ROOT = '/media/hdc/KITTI/point_cloud/raw_bin_files/training/velodyne/'
 CALIB_ROOT = '/media/hdc/KITTI/calib/data_object_calib/training/calib/'
 
-
+SAVE_ROOT = 'path to save root'
 
 for frame in range(0, 7481):
     img_dir = IMG_ROOT + '%06d.png' % frame
@@ -92,7 +92,10 @@ for frame in range(0, 7481):
 
     points = align_img_and_pc(img_dir, pc_dir, calib_dir)
     
-    output_name = PC_ROOT + frame + '.bin'
+    output_name = SAVE_ROOT + '{:06d}'.format(frame) + '.bin'
+
+    print (output_name)
+
     points[:,:4].astype('float32').tofile(output_name)
 
 

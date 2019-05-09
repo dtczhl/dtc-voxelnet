@@ -1,3 +1,7 @@
+Adapted
+
+---
+
 # Introduction
 
 This is an unofficial inplementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection](https://arxiv.org/abs/1711.06396) in TensorFlow. A large part of this project is based on the work [here](https://github.com/jeasinema/VoxelNet-tensorflow). Thanks to [@jeasinema](https://github.com/jeasinema). This work is a modified version with bugs fixed and better experimental settings to chase the results reported in the paper (still ongoing).
@@ -48,7 +52,7 @@ $ chmod +x launch_test.sh
        |   ├── label_2
        |   └── velodyne
 ```
-        
+
 3. Update the dataset directory in `config.py` and `kitti_eval/launch_test.sh`
 
 # Train
@@ -105,5 +109,3 @@ The current implementation and training scheme are able to produce results in th
 - [X] fix the deadlock problem in multi-thread processing in training
 - [X] fix the infinite loop problem in `test.py`
 - [X] replace averaged calibration matrices with correct ones
-
-
