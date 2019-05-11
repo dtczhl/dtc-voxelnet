@@ -1,5 +1,5 @@
 # crooped gt dir
-GT_DIR=/media/hdc/KITTI/for_voxelnet/cropped_dataset/validation/label_2
+GT_DIR=/home/dtc/MyGit/dtc-voxelnet/data/DATA_DIR/validation/label_2
 # pred dir
 PRED_DIR=$1
 
