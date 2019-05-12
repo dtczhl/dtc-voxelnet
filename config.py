@@ -19,11 +19,11 @@ cfg = __C
 
 # for dataset dir
 __C.DATA_DIR = 'data/DATA_DIR'
-__C.CALIB_DIR = '/home/dtc/Data/KITTI/data_object_calib/calib'
+__C.CALIB_DIR = '/home/huanlezhang/Data/KITTI/data_object_calib/training/calib'
 
 
 # for gpu allocation
-__C.GPU_AVAILABLE = '0,1'
+__C.GPU_AVAILABLE = '0'
 __C.GPU_USE_COUNT = len(__C.GPU_AVAILABLE.split(','))
 __C.GPU_MEMORY_FRACTION = 1
 

@@ -2,15 +2,16 @@ import os
 import shutil
 
 # ------ configuration zone ------
-image_training_dir = '/home/dtc/Data/KITTI/data_object_image_2/training/image_2/'
-label_training_dir = '/home/dtc/Data/KITTI/data_object_label_2/training/label_2/'
-velodyne_training_dir = '/home/dtc/Data/KITTI/voxelnet/training/'
+image_training_dir = '/home/huanlezhang/Data/KITTI/data_object_image_2/training/image_2/'
+label_training_dir = '/home/huanlezhang/Data/KITTI/data_object_label_2/training/label_2/'
+velodyne_training_dir = '/home/huanlezhang/Data/KITTI/pointCloudCropped/'
 
-train_data_id_file = '/home/dtc/MyGit/dtc-voxelnet/data/ImageSets/train.txt'
-valid_data_id_file = '/home/dtc/MyGit/dtc-voxelnet/data/ImageSets/val.txt'
+# ---- end of configuration ---
+
+train_data_id_file = 'ImageSets/train.txt'
+valid_data_id_file = 'ImageSets/val.txt'
 
 SAVE_ROOT = 'DATA_DIR'
-# ---- end of configuration ----
 
 training_image_2 = os.path.join(SAVE_ROOT, 'training/image_2/')
 training_label_2 = os.path.join(SAVE_ROOT, 'training/label_2/')
